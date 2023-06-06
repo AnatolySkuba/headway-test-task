@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom right,
+    transparent 50%,
+    var(--Orange-5) 50%
+  );
+}
+
+.picture {
+  width: 196.86px;
+  height: 155.46px;
+}
+
+.header {
+  margin: 42.54px 0 102px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 116%;
+  text-align: center;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .picture {
+    margin-right: 118.59px;
+    width: 451.61px;
+    height: 356.59px;
+  }
+
+  .header {
+    margin: 0 0 64px;
+    font-size: 56px;
+    text-align: left;
+  }
+}
