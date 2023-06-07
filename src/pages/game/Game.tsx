@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
+import { Error, Loader } from "components";
 import { BREAKPOINTS } from "consts";
 import { randElement } from "helpers";
 import useWindowWidth from "hooks";
@@ -17,11 +18,11 @@ function Game() {
   const score = useSelector(getScore);
 
   if (data?.isLoading) {
-    return <p>Loading...</p>;
+    return <Loader />;
   }
 
   if (data?.isError) {
-    return <p>Error</p>;
+    return <Error />;
   }
 
   const { questions }: { questions: Question[] } = data.data;
