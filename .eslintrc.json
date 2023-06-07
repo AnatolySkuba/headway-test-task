@@ -12,6 +12,7 @@
     "plugin:import/typescript",
     "plugin:prettier/recommended"
   ],
+  "plugins": ["react", "@typescript-eslint", "prettier"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
@@ -21,6 +22,5 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {}
 }

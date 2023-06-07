@@ -1,10 +1,13 @@
 {
   "name": "headway-test-task",
   "version": "0.1.0",
+  "homepage": "https://anatolyskuba.github.io/headway-test-task",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write src/**/*.ts{,x}",
@@ -42,6 +45,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.32.2",
+    "gh-pages": "^5.0.0",
     "prettier": "^2.8.8"
   },
   "browserslist": {
