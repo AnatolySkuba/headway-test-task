@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--Black-5);
+}
+
+.menu {
+  width: -webkit-fill-available;
+  padding: 16px;
+  text-align: end;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.question {
+  padding: 16px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+}

@@ -12,12 +12,20 @@
 }
 
 .picture {
-  margin-bottom: 42.54px;
+  margin-bottom: 50.54px;
   width: 196.86px;
   height: 155.46px;
 }
 
-.header {
+.total {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.score {
   margin-bottom: 102px;
   font-weight: 600;
   font-size: 32px;
@@ -36,8 +44,13 @@
     height: 356.59px;
   }
 
-  .header {
-    margin-bottom: 64px;
+  .total {
+    font-size: 32px;
+    text-align: left;
+  }
+
+  .score {
+    margin-bottom: 85px;
     font-size: 56px;
     text-align: left;
   }

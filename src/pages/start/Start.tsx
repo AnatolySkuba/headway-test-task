@@ -16,7 +16,7 @@ function Start() {
           <br />a millionaire?
         </h1>
         <a href="/game">
-          <button type="button" className="btn-primary">
+          <button type="button" className="btn btn-primary">
             Start
           </button>
         </a>

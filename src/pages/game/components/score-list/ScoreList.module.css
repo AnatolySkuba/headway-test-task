@@ -1,0 +1,49 @@
+.item {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.scores {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100vh - 60px);
+}
+
+.score {
+  width: 320px;
+  height: 32px;
+  display: block;
+}
+
+.value {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.past {
+  color: var(--Black-40);
+}
+
+.active {
+  color: var(--Orange-100);
+}
+
+@media (min-width: 1440px) {
+  .scores {
+    background-color: var(--White-100);
+  }
+
+  .score {
+    width: 376px;
+    height: 40px;
+  }
+
+  .value {
+    font-size: 20px;
+  }
+}
