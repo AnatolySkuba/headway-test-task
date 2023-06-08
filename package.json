@@ -12,7 +12,6 @@
     "format": "prettier --write src/**/*.ts{,x}",
     "lint": "node_modules/.bin/eslint src/",
     "lint:fix": "node_modules/.bin/eslint src/ --fix .",
-    "pre-push": "yarn test",
     "prepare": "husky install"
   },
   "dependencies": {
