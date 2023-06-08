@@ -15,7 +15,7 @@ function Start() {
           Who wants to be
           <br />a millionaire?
         </h1>
-        <a href="/game">
+        <a href="/headway-test-task/game">
           <button type="button" className="btn btn-primary">
             Start
           </button>

@@ -1,7 +1,7 @@
 {
   "name": "headway-test-task",
   "version": "0.1.0",
-  "homepage": "https://anatolyskuba.github.io/headway-test-task",
+  "homepage": "https://anatolyskuba.github.io/headway-test-task/",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
