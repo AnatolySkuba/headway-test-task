@@ -8,6 +8,7 @@ import css from "./Start.module.css";
 
 function Start() {
   console.log("test");
+
   return (
     <div className={css.container}>
       <svg className={css.picture}>
