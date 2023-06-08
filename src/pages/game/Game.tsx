@@ -20,11 +20,11 @@ function Game() {
   const data = useGetQuestionsQuery(getQuestions);
   const score = useSelector(getScore);
 
-  if (data?.isLoading) {
+  if (data.isLoading) {
     return <Loader />;
   }
 
-  if (data?.isError) {
+  if (data.isError) {
     return <Error />;
   }
 

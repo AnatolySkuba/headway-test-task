@@ -6,13 +6,14 @@
     <li><a href="#about-the-project">About the project</a></li>
     <li><a href="#used-technologies">Used technologies</a></li>
     <li><a href="#getting-started">Getting started</a></li>
-    <li><a href="#explanation-to-the-project">Explanation to the project</a></li>
   </ol>
 </details>
 
 ## About the project
 
-This is the test task for Headway. "Who wants to be a millionaire?" app.
+This is a test task for Headway. "Who wants to be a millionaire?" application.
+
+Data is loaded from the server: https://github.com/AnatolySkuba/headway-test-task-server
 
 ## Used technologies
 
@@ -44,7 +45,3 @@ yarn start
 ```
 
 Then open http://localhost:3000
-
-## Explanation to the project
-
-Data is loaded from the server: https://github.com/AnatolySkuba/headway-test-task-server
