@@ -65,14 +65,14 @@
     ]
   },
   "lint-staged": {
-    "*src/**/*.{js,jsx,ts,tsx}": [
-      "node_modules/.bin/eslint src/ --fix",
+    "src/**/*.{ts,tsx}": [
+      "npm run lint",
       "git add"
     ]
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint",
+      "pre-commit": "lint-staged && npm run test",
       "pre-push": "npm test"
     }
   }
