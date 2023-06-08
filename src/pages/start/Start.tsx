@@ -7,7 +7,7 @@ import { ROUTER_KEYS } from "consts";
 import css from "./Start.module.css";
 
 function Start() {
-  console.log("test23");
+  console.log("test211");
 
   return (
     <div className={css.container}>

@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route, Navigate, BrowserRouter } from "react-router-dom";
 
 import { Game, Over, Start } from "pages";
-import { ROUTER_KEYS, BREAKPOINTS } from "consts";
+import { ROUTER_KEYS } from "consts";
 
 function AppRouter() {
   return (
