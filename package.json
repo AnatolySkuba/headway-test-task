@@ -62,10 +62,10 @@
       "last 1 safari version"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm lint",
-      "pre-push": "yarn test"
-    }
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "yarn lint",
+      "git add"
+    ]
   }
 }
