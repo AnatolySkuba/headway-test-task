@@ -9,7 +9,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
-    "precommit": "lint-staged",
+    "precommit": "node_modules/.bin/eslint src/",
     "prepush": "npm test",
     "format": "prettier --write src/**/*.ts{,x}",
     "lint": "node_modules/.bin/eslint src/",
