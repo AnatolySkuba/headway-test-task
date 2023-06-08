@@ -12,7 +12,7 @@ describe("Loader component", () => {
     const loaderContainer = screen.getByRole("main");
     const loader = screen.getByRole("figure");
 
-    expect(loaderContainer).toHaveClass("container");
+    expect(loaderContainer).toHaveClass("container2");
     expect(loader).toHaveClass("loader");
   });
 });
