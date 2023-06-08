@@ -11,8 +11,8 @@
     "test": "react-scripts test",
     "prepush": "npm test",
     "format": "prettier --write src/**/*.ts{,x}",
-    "eslint": "node_modules/.bin/eslint src/",
-    "eslint:fix": "node_modules/.bin/eslint src/ --fix ."
+    "lint": "node_modules/.bin/eslint src/",
+    "lint:fix": "node_modules/.bin/eslint src/ --fix ."
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
