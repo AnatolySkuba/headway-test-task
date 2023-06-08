@@ -72,8 +72,8 @@
   },
   "husky": {
     "hooks": {
-      "precommit": "npm run lint",
-      "prepush": "npm test"
+      "precommit": "yarn lint",
+      "prepush": "yarn test"
     }
   }
 }
