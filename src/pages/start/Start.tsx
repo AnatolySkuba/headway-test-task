@@ -7,6 +7,8 @@ import { ROUTER_KEYS } from "consts";
 import css from "./Start.module.css";
 
 function Start() {
+  console.log("test21");
+
   return (
     <div className={css.container}>
       <svg className={css.picture}>
