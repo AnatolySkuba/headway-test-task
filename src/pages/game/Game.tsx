@@ -3,12 +3,15 @@ import { useSelector } from "react-redux";
 
 import { Error, Loader } from "components";
 import { BREAKPOINTS } from "consts";
-import { randElement } from "helpers";
-import useWindowWidth from "hooks";
-import { useGetQuestionsQuery } from "store/questions/questionsApi";
-import { getQuestions, getScore } from "store/questions/questionsSelectors";
 import { Question } from "types";
 
+import useWindowWidth from "../../hooks";
+import { randElement } from "../../helpers";
+import { useGetQuestionsQuery } from "../../store/questions/questionsApi";
+import {
+  getQuestions,
+  getScore,
+} from "../../store/questions/questionsSelectors";
 import GameDesktop from "./game-desktop";
 import GameMobile from "./game-mobile";
 

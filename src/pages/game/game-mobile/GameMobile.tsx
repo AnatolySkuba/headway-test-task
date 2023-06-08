@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import sprite from "assets/sprite.svg";
 import { Question } from "types";
 
+import sprite from "../../../assets/sprite.svg";
 import css from "./GameMobile.module.css";
 import { ButtonList, ScoreList } from "../components";
 
-type Props = {
+export type Props = {
   currentQuestion: Question;
 };
 

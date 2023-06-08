@@ -5,7 +5,7 @@ import { Question } from "types";
 import css from "./GameDesktop.module.css";
 import { ButtonList, ScoreList } from "../components";
 
-type Props = {
+export type Props = {
   currentQuestion: Question;
 };
 

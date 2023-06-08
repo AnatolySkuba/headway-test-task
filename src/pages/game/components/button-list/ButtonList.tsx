@@ -2,16 +2,16 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 
-import { changeScore } from "store/questions/questionsSlice";
 import { BREAKPOINTS, BUTTONS, COLORS, ROUTER_KEYS, SCORES } from "consts";
 import sprite from "assets/sprite.svg";
-import { areArraysEqual } from "helpers";
-import useWindowWidth from "hooks";
 import { Question } from "types";
 
+import { changeScore } from "../../../../store/questions/questionsSlice";
+import { areArraysEqual } from "../../../../helpers";
+import useWindowWidth from "../../../../hooks";
 import css from "./ButtonList.module.css";
 
-type Props = {
+export type Props = {
   currentQuestion: Question;
 };
 

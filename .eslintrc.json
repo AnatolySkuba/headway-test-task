@@ -22,5 +22,13 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      }
+    }
+  ],
   "rules": {}
 }

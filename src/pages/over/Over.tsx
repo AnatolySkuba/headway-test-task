@@ -2,12 +2,12 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
-import { getScore } from "store/questions/questionsSelectors";
-import { changeScore } from "store/questions/questionsSlice";
-import { addCommasToNumber } from "helpers";
 import { ROUTER_KEYS, SCORES } from "consts";
-import sprite from "assets/sprite.svg";
 
+import { getScore } from "../../store/questions/questionsSelectors";
+import { changeScore } from "../../store/questions/questionsSlice";
+import { addCommasToNumber } from "../../helpers";
+import sprite from "../../assets/sprite.svg";
 import css from "./Over.module.css";
 
 function Over() {

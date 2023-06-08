@@ -1,12 +1,12 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-import { getScore } from "store/questions/questionsSelectors";
 import sprite from "assets/sprite.svg";
-import { addCommasToNumber } from "helpers";
-import useWindowWidth from "hooks";
 import { BREAKPOINTS, COLORS, SCORES } from "consts";
 
+import useWindowWidth from "../../../../hooks";
+import { getScore } from "../../../../store/questions/questionsSelectors";
+import { addCommasToNumber } from "../../../../helpers";
 import css from "./ScoreList.module.css";
 
 function ScoreList() {

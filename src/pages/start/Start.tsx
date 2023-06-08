@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import sprite from "assets/sprite.svg";
 import { ROUTER_KEYS } from "consts";
 
+import sprite from "../../assets/sprite.svg";
 import css from "./Start.module.css";
 
 function Start() {
