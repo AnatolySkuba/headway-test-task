@@ -64,16 +64,16 @@
       "last 1 safari version"
     ]
   },
-  "lint-staged": {
-    "src/**/*.{ts,tsx}": [
-      "npm run lint",
-      "git add"
-    ]
-  },
   "husky": {
     "hooks": {
-      "precommit": "yarn lint",
+      "precommit": "lint-staged",
       "prepush": "yarn test"
     }
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "yarn lint",
+      "git add"
+    ]
   }
 }
