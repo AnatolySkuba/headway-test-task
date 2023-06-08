@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getScore } from "store/questions/questionsSelectors";
 import { changeScore } from "store/questions/questionsSlice";
 import { addCommasToNumber } from "helpers";
-import { SCORES } from "consts";
+import { ROUTER_KEYS, SCORES } from "consts";
 import sprite from "assets/sprite.svg";
 
 import css from "./Over.module.css";
@@ -17,7 +17,7 @@ function Over() {
 
   const handleButton = () => {
     dispatch(changeScore(SCORES[SCORES.length - 1]));
-    navigate("/headway-test-task/");
+    navigate(ROUTER_KEYS.ROOT);
   };
 
   return (

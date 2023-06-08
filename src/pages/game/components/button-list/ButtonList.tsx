@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 
 import { changeScore } from "store/questions/questionsSlice";
-import { BREAKPOINTS, BUTTONS, COLORS, SCORES } from "consts";
+import { BREAKPOINTS, BUTTONS, COLORS, ROUTER_KEYS, SCORES } from "consts";
 import sprite from "assets/sprite.svg";
 import { areArraysEqual } from "helpers";
 import useWindowWidth from "hooks";
@@ -42,11 +42,11 @@ function ButtonList({ currentQuestion }: Props) {
         );
         setAnswer([]);
         if (SCORES[SCORES.indexOf(currentQuestion.money) - 1] === SCORES[0]) {
-          navigate("/headway-test-task/over");
+          navigate(ROUTER_KEYS.OVER);
         }
       }
     } else {
-      navigate("/headway-test-task/over");
+      navigate(ROUTER_KEYS.OVER);
     }
   };
 

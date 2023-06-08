@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import sprite from "assets/sprite.svg";
+import { ROUTER_KEYS } from "consts";
 
 import css from "./Start.module.css";
 
@@ -15,11 +17,11 @@ function Start() {
           Who wants to be
           <br />a millionaire?
         </h1>
-        <a href="/headway-test-task/game">
+        <Link to={ROUTER_KEYS.GAME}>
           <button type="button" className="btn btn-primary">
             Start
           </button>
-        </a>
+        </Link>
       </div>
     </div>
   );
