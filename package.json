@@ -9,9 +9,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
-    "prepare": "husky install",
     "prepush": "npm test",
-    "lint-staged": "eslint --ext .js,.jsx,.ts,.tsx --fix",
     "format": "prettier --write src/**/*.ts{,x}",
     "lint": "eslint .",
     "lint:fix": "eslint --fix ."
@@ -65,9 +63,19 @@
       "last 1 safari version"
     ]
   },
-  "config": {
-    "ghooks": {
-      "pre-push": "npm run unit-tests"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --ext .js,.jsx,.ts,.tsx --fix",
+      "git add"
+    ],
+    "*.{html,css,less,ejs}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
