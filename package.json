@@ -72,10 +72,6 @@
     "*.{js,jsx,ts,tsx}": [
       "node_modules/.bin/eslint src/ --ext .js,.jsx,.ts,.tsx --fix",
       "git add"
-    ],
-    "*.{html,css,less,ejs}": [
-      "prettier --write",
-      "git add"
     ]
   }
 }
