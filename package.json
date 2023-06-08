@@ -63,8 +63,8 @@
     ]
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
-      "node_modules/.bin/eslint src/",
+    "*": [
+      "yarn lint",
       "git add"
     ]
   }
